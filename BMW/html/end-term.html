@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBW</title>
+    <link rel="stylesheet" href="../css/end-term.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="root">
+        <div class="root-body">
+            <div class="form sign-in">
+                <!-- 登入 -->
+                <h2>進來啦</h2>
+                <label>
+                    <span> Name</span>
+                    <input type="Name" id="Name">
+                </label>
+                <label>
+                    <span>Account</span>
+                    <input type="Account"  id="Account">
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password"  id="password">
+                </label>
+
+
+                <button class="submit" type="button" onclick="click1()">Sign In</button>
+                <p class="forgot">Forgot Password ?</p>
+
+                <div class="gohome">
+                    <a href="../test.html">
+                        <img src="../img/LOGO.png">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="root-body-2">
+                <div class="img">
+                    <div class="img-text up">
+                        <div class="img-textt">
+                            <h2>想當司機嗎</h2>
+                            <p>我就放在網站上，自己註冊尋找吧</p>
+                        </div>
+
+                    </div>
+                    <div class="img-text in">
+                        <div class="img-textt">
+                            <h2>早就是司機?</h2>
+                            <p>Hey guys We have gifts for you</p>
+                        </div>
+
+                    </div>
+                    <div class="img-btn">
+                        <span class="up">Sign Up</span>
+                        <span class="in">Sign In</span>
+                    </div>
+                </div>
+
+
+                <div class="form sign-up">
+                    <h2>成為我們的夥伴吧 </h2>
+                    <label>
+                        <span>Name</span>
+                        <input type="Name" id="nname">
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" id="email">
+                    </label>
+                    <!-- <label>
+                        <span>Phone</span>
+                        <input type="Phone" name="Phone">
+                    </label> -->
+                    <!-- <label>
+                        <span>Address</span>
+                        <input type="Address" name="Address">
+                    </label> -->
+                    <label>
+                        <span>Account</span>
+                        <input type="Account" id="AAccount">
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" id="ppassword">
+                    </label>
+                    <!-- <label>
+                        <span>Confirm Password</span>
+                        <input type="Confirm Password">
+                    </label> -->
+                    <button type="button" class="submit" onclick="click2()">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+<script>
+    document.querySelector('.img-btn').addEventListener('click', function () {
+        document.querySelector('.root-body').classList.toggle('s-signup')
+    });
+
+    function click2(){        
+        if(nname.value==""||email.value==""||AAccount.value==""||ppassword.value==""){
+            alert("你有沒輸入的");
+        }
+    }
+
+    function click1(){
+        if(Name.value==""||Account.value==""||password.value==""){
+            alert("你有沒輸入的");
+        }
+    }
+   
+</script>
+
+</html>
